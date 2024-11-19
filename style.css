@@ -1,0 +1,165 @@
+body{
+    margin: 0 80px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    justify-content: center;
+    /* background: #F8F9FA !important; */
+    background: url('images/bg2.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container-fluid{
+    display: flex !important;
+    gap: 520px;
+    margin: 0 80px !important;
+    margin-top: -10rem !important;
+    margin: auto;
+    font-size: 18px;
+}
+
+.navbars{
+    display: flex;
+    gap: 30px !important;
+}
+
+.brand{
+    font-size: 32px !important;
+    font-weight: bolder !important;
+    color: white;
+    font-family: fantasy;
+    letter-spacing: 2px !important;
+    margin-left: -5px !important;
+}
+
+.logo img{
+    margin-top: -15px;
+}
+
+.logo :hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.nav-link{
+    font-size: 18px !important;
+    font-weight: 600 !important;
+}
+.nav-link :hover{
+    color: black !important;
+    font-weight: 900;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.intro h1{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(33, 33, 33);
+    margin-bottom: -210rem !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);;
+}
+.player-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container{
+    /* position: relative; */
+    width: 170px;
+    height: 170px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform 1s;
+    margin-top: 170px !important;
+}
+
+.image-container div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); */
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+}
+
+.image-container div img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.music-info{
+    margin-top: 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.music-info h3{
+    color: rgb(64, 64, 64);
+    font-size: 22px;
+}
+
+.btn-container{
+    position: relative;
+    width: 200px;
+    /* margin-top: 20px !important; */
+}
+
+.btn{
+    position: absolute;
+    bottom: -80px;
+    background-color: black !important;
+    color: white !important;
+    border: none;
+    padding: 10px 30px !important;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(64, 64, 64) !important;
+    color: whitesmoke !important;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#prev{
+    left: -60%;
+}
+
+#play-pause{
+    left: 26.5%;
+}
+
+#next{
+    right: -60%;
+}
+
+#progress-bar {
+    margin-bottom: 20px !important;
+    width: 150%;
+    appearance: none;
+    height: 5px;
+    background: #ccc;
+    border-radius: 5px;
+    outline: none;
+    margin-left: -55px;
+}
+
+#progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #343a40;
+    border-radius: 50%;
+}
+
